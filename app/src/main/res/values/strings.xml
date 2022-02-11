@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">palma39_redux</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!--    REGISTRO USUARIO-->
+    <string name="RegistrTxt">Inicia sesion!!!</string>
+    <string name="RegistrTxt2">Registrate!!!</string>
+    <string name="Correo">Correo Electrónico</string>
+    <string name="Password">Contraseña</string>
+    <string name="Nombre">Nombre</string>
+    <string name="Apellido">Apellidos</string>
+    <string name="Edad">Edad</string>
+    <string name="FechaRegistro">Fecha de Registro</string>
+    <string name="Registrar">Registrar</string>
+    <string name="Iniciar_Sesion">Iniciar sesion</string>
+
+    <string name="desarrollador">MENU</string>
+
+    <!--    Menu toolbar-->
+    <string name="estilos">Estilos</string>
+    <string name="mtechno">Techno</string>
+    <string name="mhouse">House</string>
+    <string name="agenda">Agenda</string>
+    <string name="streaming">Streming</string>
+
+</resources>

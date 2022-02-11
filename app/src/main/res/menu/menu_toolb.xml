@@ -1,0 +1,52 @@
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+
+        <item
+            android:id="@+id/estilos"
+            android:title="@string/estilos"
+            android:orderInCategory="100"
+            app:showAsAction="never">
+
+            <menu>
+                <item
+                    android:id="@+id/mtechno"
+                    android:title="@string/mtechno"
+                    android:orderInCategory="110"
+                    app:showAsAction="never"/>
+                <item
+                    android:id="@+id/mhouse"
+                    android:title="@string/mhouse"
+                    android:orderInCategory="120"
+                    app:showAsAction="never"/>
+
+
+            </menu>
+        </item>
+
+        <item
+            android:id="@+id/agenda"
+            android:title="@string/agenda"
+            android:orderInCategory="110"
+            app:showAsAction="never"/>
+    <item
+        android:id="@+id/streaming"
+        android:title="@string/streaming"
+        android:orderInCategory="120"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/ayuda"
+        android:title="Ayuda"
+        android:orderInCategory="130"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/conocenos"
+        android:title="Conocenos"
+        android:orderInCategory="140"
+        app:showAsAction="never"/>
+
+
+</menu>

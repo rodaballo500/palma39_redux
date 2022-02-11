@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginTop="20dp">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logo_blanco2"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="25dp"
+            >
+
+            <Button
+                android:id="@+id/btn1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="inicia sesion"
+                android:textColor="@color/black"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:onClick="seleccion"/>
+            <!-- -->
+
+            <Button
+                android:id="@+id/btn2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="registrate"
+                android:textColor="@color/black"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:onClick="seleccion"/>
+
+        </LinearLayout>
+
+
+
+        <!--<androidx.fragment.app.FragmentContainerView
+            android:id="@+id/fragmentRojo"
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+           android:layout_marginTop="25dp"/> -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Elige una opcion"
+
+            />
+
+        <androidx.fragment.app.FragmentContainerView
+            android:fadeScrollbars="true"
+            android:id="@+id/fragmentVerde"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="30dp"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

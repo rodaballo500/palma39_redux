@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".d91_001"
+    >
+
+    <!-- TODO: Update blank fragment layout -->
+  <LinearLayout
+
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:padding="25dp"
+
+      android:orientation="vertical">
+
+      <ImageView
+          android:layout_width="170dp"
+          android:layout_height="170dp"
+          android:src="@drawable/discoprimeroo"
+          android:layout_gravity="center"
+          />
+      <TextView
+          android:layout_marginTop="30dp"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Lorem ipsum dolor re magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi."
+          android:textColor="@color/colorAccent"
+          android:textAlignment="textStart"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp">
+
+              <LinearLayout
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:onClick="ir"
+                  android:orientation="horizontal"
+                       >
+                  <!-- IMAGEN FOTO PERSONAJE -->
+                  <ImageView
+                      android:id="@+id/idPlay1"
+                      android:layout_width="30dp"
+                      android:layout_height="30dp"
+                      android:layout_marginTop="15dp"
+                      android:src="@drawable/ic_baseline_play_circle_filled_24"
+
+                      />
+
+                  <!-- CREAMOS lINEAR PARA CONTENER EL NOMBRE Y LA DESCRIPCION  -->
+
+                  <TextView
+                      android:id="@+id/idInfoong1"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_marginTop="18dp"
+                      android:layout_marginLeft="5dp"
+                      android:text=" 1. A1 - Altered Sequences 05:06 "
+                      android:textColor="@color/colorAccent" />
+
+              </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="ir"
+                android:orientation="horizontal"
+                >
+                <!-- IMAGEN FOTO PERSONAJE -->
+                <ImageView
+                    android:id="@+id/idPlay2"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="15dp"
+                    android:src="@drawable/ic_baseline_play_circle_filled_24"
+
+                    />
+
+                <!-- CREAMOS lINEAR PARA CONTENER EL NOMBRE Y LA DESCRIPCION  -->
+
+                <TextView
+                    android:id="@+id/idInfoong1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginLeft="5dp"
+                    android:text="2. A2 - Dance Pattern 05:58  "
+                    android:textColor="@color/colorAccent" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="ir"
+                android:orientation="horizontal"
+                >
+                <!-- IMAGEN FOTO PERSONAJE -->
+                <ImageView
+                    android:id="@+id/idPlay3"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="15dp"
+                    android:src="@drawable/ic_baseline_play_circle_filled_24"
+
+                    />
+
+                <!-- CREAMOS lINEAR PARA CONTENER EL NOMBRE Y LA DESCRIPCION  -->
+
+                <TextView
+                    android:id="@+id/idInfoong3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginLeft="5dp"
+                    android:text=" 3. B1 - Multilevel 05:59  "
+                    android:textColor="@color/colorAccent" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="ir"
+                android:orientation="horizontal"
+                >
+                <!-- IMAGEN FOTO PERSONAJE -->
+                <ImageView
+                    android:id="@+id/idPlay4"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="15dp"
+                    android:src="@drawable/ic_baseline_play_circle_filled_24"
+
+                    />
+
+                <!-- CREAMOS lINEAR PARA CONTENER EL NOMBRE Y LA DESCRIPCION  -->
+
+                <TextView
+                    android:id="@+id/idInfoong4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginLeft="5dp"
+                    android:text=" 4. B2 - Infected System 05:43  "
+                    android:textColor="@color/colorAccent" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:text="Volver"
+        android:textColor="@color/colorAccent"
+
+        android:layout_gravity="center"
+        android:onClick="volver"/>
+
+  </LinearLayout>
+
+</FrameLayout>
