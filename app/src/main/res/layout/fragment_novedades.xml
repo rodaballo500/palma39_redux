@@ -67,7 +67,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Disco nuevo recien salido al mercado:
-11/02/2022"
+05/02/2022"
                 android:textColor="@color/black"
                 android:textStyle="bold"
                 android:gravity="center_horizontal"
