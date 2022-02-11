@@ -10,6 +10,8 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.webkit.WebSettings;
+import android.webkit.WebView;
 
 import java.util.ArrayList;
 
@@ -19,12 +21,16 @@ public class novedades extends AppCompatActivity implements mTechno.OnFragmentIn
     ArrayList<PersonajeVo> listaPersonajes;
     RecyclerView recyclerPersonajes;
     mTechno mtechno;
+    NovedadesF nof;
     mHouse mhouse;
     d91_001 d91_001;
+    FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_novedades);
+        //creamos el webView para meter la pagina web
 
          mibarra =findViewById(R.id.toolbar);
         setSupportActionBar(mibarra);
@@ -32,9 +38,11 @@ public class novedades extends AppCompatActivity implements mTechno.OnFragmentIn
 
             mtechno =new mTechno();
             mhouse = new mHouse();
+            nof = new NovedadesF();
             d91_001 = new d91_001();
-            //getSupportFragmentManager().beginTransaction().add(R.id.mtechno,mhouse).commit();
-
+            if(savedInstanceState==null) {
+                transaction.replace(R.id.fragmentNovedades, nof).commit();
+            }
 
     }
 
@@ -49,7 +57,7 @@ public class novedades extends AppCompatActivity implements mTechno.OnFragmentIn
     public boolean onOptionsItemSelected (MenuItem item) {
         int id = item.getItemId();
 
-        FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+
 
         switch (id){
             case R.id.mtechno:
@@ -124,5 +132,9 @@ public class novedades extends AppCompatActivity implements mTechno.OnFragmentIn
     public void pprincipal (View view) {
         Intent intent = new Intent(novedades.this, novedades.class);
         startActivity(intent);
+    }
+    public void consultar_novedades(View v){
+
+
     }
 }
